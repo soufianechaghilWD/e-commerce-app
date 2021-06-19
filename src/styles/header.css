@@ -57,6 +57,13 @@
     font-family: "Righteous", Georgia, 'Times New Roman', Times, serif;
     font-size: 15px;
     cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 1.5rem;
+}
+.header__part2 > ul > li >svg{
+    padding-left: 3px;
 }
 .header__part2 > ul > li:hover{
     text-decoration: underline;
@@ -187,6 +194,11 @@
     min-width: 200px;
     min-height: 45px;
     cursor: pointer;
+}
+@media (max-width: 1010px) {
+    .header__part2 > ul > li{
+        padding-left: .1rem;
+    }
 }
 @media (max-width: 880px) {
     .header__part2 > ul{

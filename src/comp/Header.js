@@ -5,13 +5,20 @@ import Logo from "../files/pics/logo.png"
 import { BsList } from "react-icons/bs"
 import WLogo from '../files/pics/logo_w.png'
 import { ImCross } from "react-icons/im"
+import { AiFillCaretDown } from 'react-icons/ai'
+import Data from '../files/data/Header'
 
 
 
 const Header = () => {
 
-    const [open, setOpen] = useState(false)
+    const [active, setActive] = useState(null)
+    const [openm, setOpen] = useState(false)
     const [openSearch, setOpenSearch] = useState(false)
+
+    const handleClick = (event) => {
+        setActive(event.target.innerHTML)
+    };
 
 
 
@@ -32,10 +39,10 @@ const Header = () => {
                     <img src={Logo} alt="" />
                 </div>
                 <ul>
-                    <li>Fashion</li>
-                    <li>Electronics</li>
-                    <li>Home</li>
-                    <li>Sports</li>
+                    <li onClick={handleClick}><p>Fashion</p> <AiFillCaretDown /></li>
+                    <li onClick={handleClick}><p>Electronics</p> <AiFillCaretDown /></li>
+                    <li onClick={handleClick}><p>Homes</p> <AiFillCaretDown /></li>
+                    <li onClick={handleClick}><p>Sports</p> <AiFillCaretDown /></li>
                     <li>Others</li>
                 </ul>
                 <div className="header__user">
@@ -45,7 +52,7 @@ const Header = () => {
                     <BsList onClick={() => setOpen(true)}/>
                 </div>
             </div>
-            {open && 
+            {openm && 
                 <div className="header__sm">
                     <ImCross onClick={() => setOpen(false)}/>
                     <div className="header__sm__logo">
@@ -74,6 +81,7 @@ const Header = () => {
                     </form>
                 </div>
             }
+            
         </div>
     )
 }
