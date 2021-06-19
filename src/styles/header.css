@@ -1,0 +1,212 @@
+.header{
+    display: block;
+    margin: 0 auto;
+    max-width: 1650px;
+    position: relative;
+}
+.header__part1{
+    padding: 8px 1rem 5px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #DADADA;
+}
+.header__part1 > .header__part1__1 {
+    display: flex;
+    font-size: 13px;
+    font-weight: 700;
+    cursor: pointer;
+    border-bottom: 1px solid black;
+}
+.header__part1 > .header__part1__1 > svg , .header__part1 > .header__part1__1 > p{
+    display: block;
+    margin: auto 0 auto 0.3rem;
+}
+.header__part1 > .header__part1__2 {
+    display: flex;
+    font-size: 17px;
+}
+.header__part1 > .header__part1__2 > svg {
+    display: block;
+    margin: auto 0.5rem;
+    cursor: pointer;
+}
+.header__part2{
+    margin: 0 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+.header__part2 > .header__logo{
+    display: flex;
+    justify-content: center;
+    max-width: 300px;
+    align-items: flex-start;
+}
+.header__part2 > .header__logo > img{
+    width: 100%;
+    cursor: pointer;
+}
+.header__part2 > ul{
+    flex: 1;
+    max-width: 400px;
+    display: flex;
+    justify-content: space-around;
+}
+.header__part2 > ul > li{
+    margin: auto 0;
+    list-style: none;
+    font-family: "Righteous", Georgia, 'Times New Roman', Times, serif;
+    font-size: 15px;
+    cursor: pointer;
+}
+.header__part2 > ul > li:hover{
+    text-decoration: underline;
+    color: #00ACA2;
+}
+.header__user{
+    display: block;
+    margin: auto 0;
+} 
+.header__user > button{
+    background: #00ACA2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 600;
+    min-width: 130px;
+    min-height: 35px;
+    cursor: pointer;
+}
+
+.header__list__sm{
+    display: none;
+}
+.header__list__sm > svg{
+    cursor: pointer;
+}
+.header__sm{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background: #00ACA2;
+    top: 0;
+    left: 0;
+    padding: 1rem ;
+    box-sizing: border-box;
+    z-index: 99;
+}
+.header__sm > svg{
+    display: block;
+    margin: 0 0 1.5rem auto;
+    cursor: pointer;
+}
+.header__sm__logo{
+    max-width: 225px;
+    display: block;
+    margin: auto 0;
+}
+.header__sm__logo > img{
+    width: 100%;
+    cursor: pointer;
+}
+.header__sm > .header__sm__items{
+    flex: 1;
+    display: flex;
+    align-items: center;
+} 
+.header__sm > .header__sm__items > ul > li{
+    list-style: none;
+    font-size: 24px;
+    padding: 8px 0;
+    font-weight: 600;
+    font-family: "Righteous", Georgia, 'Times New Roman', Times, serif;
+    cursor: pointer;
+}
+.header__sm__user > button{
+    background: #C4C4C4;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 600;
+    min-width: 130px;
+    min-height: 35px;
+    cursor: pointer;
+}
+.header__search{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(196, 196, 196, 0.89);
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    z-index: 99; 
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+.header__search > svg{
+    display: block;
+    margin: 0 0 0 auto;
+    font-size: 40px;
+    cursor: pointer;
+}
+.header__search > form{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.header__search > form > input::placeholder{
+    font-size: 14px;
+    font-weight: normal;
+}
+.header__search > form > input{
+    width: 75%;
+    height: 7.5%;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    margin-bottom: 2rem;
+    padding-left: 1rem;
+    font-size: 20px;
+    font-weight: 500;
+}
+.header__search > form > button{
+    background: #00ACA2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: 700;
+    min-width: 200px;
+    min-height: 45px;
+    cursor: pointer;
+}
+@media (max-width: 880px) {
+    .header__part2 > ul{
+        display: none;
+    }
+    .header__user{
+        display: none;
+    }
+    .header__list__sm{
+        display: block;
+        margin: auto 0;
+        font-size: 25px;
+    } 
+    .header__part2 > .header__logo{
+        max-width: 225px;
+    }
+    .header__search > form > input::placeholder{
+        font-size: 9px;
+    }
+    .header__search > svg{
+        font-size: 25px;
+    }
+}
