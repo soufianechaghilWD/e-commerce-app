@@ -1,6 +1,7 @@
 .header{
     display: block;
     margin: 0 auto;
+    height: 80px;
     max-width: 1650px;
     position: relative;
 }
@@ -45,30 +46,7 @@
     width: 100%;
     cursor: pointer;
 }
-.header__part2 > ul{
-    flex: 1;
-    max-width: 400px;
-    display: flex;
-    justify-content: space-around;
-}
-.header__part2 > ul > li{
-    margin: auto 0;
-    list-style: none;
-    font-family: "Righteous", Georgia, 'Times New Roman', Times, serif;
-    font-size: 15px;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-left: 1.5rem;
-}
-.header__part2 > ul > li >svg{
-    padding-left: 3px;
-}
-.header__part2 > ul > li:hover{
-    text-decoration: underline;
-    color: #00ACA2;
-}
+
 .header__user{
     display: block;
     margin: auto 0;
@@ -194,6 +172,69 @@
     min-width: 200px;
     min-height: 45px;
     cursor: pointer;
+}
+
+/* .header__part2 > ul{
+    flex: 1;
+    max-width: 400px;
+    display: flex;
+    justify-content: space-around;
+}
+.header__part2 > ul > li{
+    margin: auto 0;
+    list-style: none;
+    font-family: "Righteous", Georgia, 'Times New Roman', Times, serif;
+    font-size: 15px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 1.5rem;
+}
+.header__part2 > ul > li:hover{
+    text-decoration: underline;
+    color: #00ACA2;
+} */
+
+.header__part2 > ul{
+    flex: 1;
+    max-width: 400px;
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+}
+.header__part2 > ul > li {
+    /* display: inline-block; */
+    display: flex;
+    align-items: center;
+    list-style: none;
+    cursor: pointer;
+}
+.header__part2 > ul > li:hover {
+    text-decoration: underline;
+    color: #00ACA2 !important;
+}
+.header__part2 > ul > li > a{
+    color: inherit;
+    color: black !important;
+    text-decoration: none;
+    font-family: "Righteous", Georgia, 'Times New Roman', Times, serif;
+    font-size: 15px;
+}
+.header__part2 > ul > li > a:hover{
+    color: #00ACA2 !important;
+}
+.header__part2 > ul > li:hover div {
+    display: block;
+}
+.header__part2 > ul > li div {
+    position: absolute;
+    left: 0;
+    top: 80px;
+    width: 100%;
+    display: none;
+    background-color: green;
 }
 @media (max-width: 1010px) {
     .header__part2 > ul > li{
