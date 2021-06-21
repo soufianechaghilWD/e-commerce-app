@@ -1,92 +1,159 @@
-import Fashion from '../pics/fashion.png'
+import Fashion from '../pics/fashion.jpg'
+import Electronics from '../pics/electronic.jpg'
+import Home from "../pics/home.jpg"
+import Sports from '../pics/sports.jpg'
 
 const header__data = {
     "Fashion": {
-        color: '#DE0085',
         hoverFunc: true,
         pic: Fashion,
         header: "Fashion",
-        sub1: 'Man',
-        sub2: "Woman",
+        lisNum: 4,
+        sub1: 'Scarves & Shawls',
+        sub2: "Hats & Caps",
+        sub3: "Belts & Accessories",
+        sub4: "Baby Clothing",
         lis1: [
-            'Shirts',
-            "Shoes",
-            "Jeans",
-            "Addidas",
-            "Nike"
+            "Other Scarves & Shawls",
+            "Silk Scarves",
+            "Fur Scarves",
+            "Fur Shawls",
+            "Knitted Scarves",
+            "Knitted Shawls",
         ],
         lis2: [
-            'Shirts',
-            "Shoes",
-            "Jeans",
-            "Addidas",
-            "Nike"
+            "Berets",
+            "Sports Caps",
+            "Straw Hats",
+            "Baby Hats & Caps",
+            "Bonnets",
+            "Bucket Hats",
+        ],
+        lis3: [
+            "Beaded Belts",
+            "Belt Buckles",
+            "Belt Chains",
+            "Chain Belts",
+            "Fabric Belts",
+            "Genuine Leather Belts",
+        ],
+        lis4: [
+            "Baby T-Shirts",
+            "Baby bibs",
+            "Baby clothing sets",
+            "Baby dresses",
+            "Baby hoodies&swearshirts",
+            "Baby jackets&outwears",
         ]
     },
     "Electronics": {
-        color: '#DE0085',
         hoverFunc: true,
-        pic: Fashion,
+        pic: Electronics,
         header: "Electronics",
-        sub1: 'Man',
-        sub2: "Woman",
+        lisNum: 3,
+        sub1: 'Camera, Photo & Accessories',
+        sub2: " Computer Hardware & Software",
+        sub3: "Chargers,Batteries & Power Supplies",
         lis1: [
-            'Shirts',
-            "Shoes",
-            "Jeans",
-            "Addidas",
-            "Nike"
+            "Action & Sports Camera",
+            "Action & Sports Camera Accessory",
+            "Baby & Pet Monitor",
+            "Backgrounds",
+            "Battery Grip",
+            "Camera Filters",
         ],
         lis2: [
-            'Shirts',
-            "Shoes",
-            "Jeans",
-            "Addidas",
-            "Nike"
+            "All in One Computers",
+            "Blank Disks",
+            "CPUs",
+            "Computer Cases & Towers",
+            "Desktops",
+            "Fans & Cooling",
+        ],
+        lis3: [
+            "Battery Accessories",
+            "Battery Case",
+            "Battery Charger",
+            "Charger & Adapter",
+            "Charging Stand & Holder",
+            "Charging Station & Power Station",
         ]
     },
     "Homes": {
-        color: '#DE0085',
         hoverFunc: true,
-        pic: Fashion,
+        pic: Home,
         header: "Homes",
-        sub1: 'Man',
-        sub2: "Woman",
+        lisNum: 3,
+        sub1: 'Garden Supplies',
+        sub2: "Home Decor",
+        sub3: "Bathroom Products",
         lis1: [
-            'Shirts',
-            "Shoes",
-            "Jeans",
-            "Addidas",
-            "Nike"
+            "Garden Buildings",
+            "BBQ",
+            "Garden Landscaping & Decking",
+            "Garden Pots & Planters",
+            "Household Thermometers",
+            "Mailboxes"
         ],
         lis2: [
-            'Shirts',
-            "Shoes",
-            "Jeans",
-            "Addidas",
-            "Nike"
+            "Artificial Plants and Flowers",
+            "Blinds, Shades & Shutters",
+            "Candles & Home Fragrance",
+            "Clocks",
+            "Curtain Poles, Tracks & Accessories",
+            "Decorative Accents",
+        ],
+        lis3:[
+            "Basins",
+            "Bath Mats",
+            "Bath Pillows",
+            "Bathroom Sets",
+            "Other Bath & Toilet Supplies",
+            "Shower Caps",
         ]
     },
     "Sports": {
         color: '#DE0085',
         hoverFunc: true,
-        pic: Fashion,
+        pic: Sports,
         header: "Sports",
-        sub1: 'Man',
-        sub2: "Woman",
+        lisNum: 4,
+        sub1: 'Fitness & Body Building',
+        sub2: "Indoor Soprts",
+        sub3: "Boats & Ships",
+        sub4: 'Gambling',
         lis1: [
-            'Shirts',
-            "Shoes",
-            "Jeans",
-            "Addidas",
-            "Nike"
+            "Balance Training",
+            "Boxing",
+            "Cardio Training",
+            "Dance Pads(Old)",
+            "Fitness Accessories",
+            "Fitness Balls(Old)",
         ],
         lis2: [
-            'Shirts',
-            "Shoes",
-            "Jeans",
-            "Addidas",
-            "Nike"
+            "Air Hockey",
+            "Board Game",
+            "Bowling",
+            "Chess Games",
+            "Coin Operated Games",
+            "Darts",
+        ],
+        lis3: [
+            "Barge",
+            "Cabin Cruiser",
+            "Cargo Ship",
+            "Fishing Vessel",
+            "Other Boats",
+            "Parts & Accessories",
+            "Passenger Ship"
+        ],
+        lis4: [
+            "Bingo",
+            "Dice",
+            "Gambling Tables",
+            "Other Gambling Products",
+            "Playing Cards",
+            "Poker Chips"
         ]
     }
 }

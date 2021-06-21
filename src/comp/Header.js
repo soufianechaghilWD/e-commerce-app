@@ -8,13 +8,21 @@ import Data from '../files/data/Header'
 import Header_sm from './Header_sm'
 import Header_search from './Header_search'
 import Header__item__cat from './Header__item__cat'
-
+import { AiFillCaretDown } from "react-icons/ai"
 
 
 const Header = () => {
 
     const [openm, setOpen] = useState(false)
     const [openSearch, setOpenSearch] = useState(false)
+
+    const addClass = (id) => {
+        document.getElementById(id).classList.add('colorful')
+    }
+
+    const removeClass = (id) => {
+        document.getElementById(id).classList.remove('colorful')
+    }
 
     return (
         <div className="header">
@@ -34,8 +42,8 @@ const Header = () => {
                 </div>
                 <ul>
                     {Object.keys(Data).map((item, idx) => 
-                        <li key={idx}>
-                            <a href="#">{item}</a>
+                        <li key={idx} onMouseEnter={() => addClass(item)} onMouseLeave={() => removeClass(item)}>
+                            <a href="#" id={item}>{item} {Data[`${item}`]?.hoverFunc && <AiFillCaretDown />}</a>
                             {Data[`${item}`]?.hoverFunc &&
                                 <Header__item__cat  data={Data[`${item}`]}/>
                             }    

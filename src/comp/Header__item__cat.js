@@ -1,12 +1,30 @@
 import React from 'react'
+import '../styles/header__cat.css'
 
 const Header__item__cat = ({data}) => {
+    var arr = []
+    for(let i = 0; i < data.lisNum; i++) arr.push(i)
+    console.log(arr)
     return (
         <div className="header__cat">
-            <h1>{data.header}</h1>
-            {data?.lis1.map((it, id) => 
-                <p href="#" key={id}>{it}</p>
-            )}
+            <h1 className="header__cat__header">{data.header}</h1>
+            <div className="header__cat__content">
+                <div className="header__cat__lists">
+                    {
+                        arr.map(ele => 
+                            <div key={ele}>
+                                <h2>{data['sub'+(ele+1)]}</h2>
+                                {data['lis'+(ele+1)].map((ite, idx) => 
+                                    <p key={idx}>{ite}</p>    
+                                )}
+                            </div>
+                        )
+                    }
+                </div>
+                <div className="header__cat__pic">
+                    <img src={data.pic} alt='' />
+                </div>
+            </div>
         </div>
     )
 }
