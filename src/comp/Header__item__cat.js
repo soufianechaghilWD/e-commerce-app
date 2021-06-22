@@ -4,7 +4,6 @@ import '../styles/header__cat.css'
 const Header__item__cat = ({data}) => {
     var arr = []
     for(let i = 0; i < data.lisNum; i++) arr.push(i)
-    console.log(arr)
     return (
         <div className="header__cat">
             <h1 className="header__cat__header">{data.header}</h1>

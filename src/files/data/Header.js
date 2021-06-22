@@ -113,7 +113,6 @@ const header__data = {
         ]
     },
     "Sports": {
-        color: '#DE0085',
         hoverFunc: true,
         pic: Sports,
         header: "Sports",
@@ -155,6 +154,10 @@ const header__data = {
             "Playing Cards",
             "Poker Chips"
         ]
+    },
+    "Other": {
+        hoverFunc: false,
+        header: "Other",
     }
 }
 
