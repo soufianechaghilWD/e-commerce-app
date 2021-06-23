@@ -39,6 +39,7 @@
     padding: 0 1.5rem;
     width: 100%;
     max-width: 1650px;
+    box-sizing: border-box;
 }
 .slide__text{
     flex: 0.44;
@@ -89,11 +90,6 @@
     font-weight: 300;
     padding-bottom: 7px;
     box-sizing: border-box;
-}
-@media (max-width: 1130px){
-    .slide__slide{
-        padding: 0;
-    }
 }
 @media (max-width: 880px){
     .slide__params{

@@ -17,7 +17,6 @@ const Slides = () => {
 
     const [windowDimensions, setWindowDimensions] = useState(getWindowDimensions());
     const [transform, setTransform] = useState(0)
-    const [transition, setTransition] = useState(0.45)
     const [ind, setInd] = useState(0)
     const [width, setWidth] = useState(0)
 
@@ -45,11 +44,6 @@ const Slides = () => {
         if(ind !== Data.length - 1){
             setTransform((ind+1)*width)
             setInd(ind+1)
-            setTransition(0.45)
-        }else{
-            setInd(0)
-            setTransform(0)
-            setTransition(0)
         }
     }
 
@@ -57,13 +51,9 @@ const Slides = () => {
         if(ind !== 0){
             setTransform((ind-1)*width)
             setInd(ind-1)
-            setTransition(0.45)
-        }else{
-            setInd((Data.length - 1))
-            setTransform((Data.length - 1)*width)
-            setTransition(0)
         }
     }
+
 
     return (
         <div className="slides">
@@ -71,9 +61,9 @@ const Slides = () => {
                 <IoIosArrowBack onClick={Back} />
                 <IoIosArrowForward onClick={Next}/>
             </div>
-            <div className="slide__content" id="content" style={{maxWidth: `${Data.length * 1650}px`, width: `${width * Data.length}px`, transform: `translateX(${-transform}px)`, transition: `transform ease-out ${transition}s`}}>
+            <div className="slide__content" id="content" style={{maxWidth: `${Data.length * 1650}px`, width: `${width * Data.length}px`, transform: `translateX(${-transform}px)`, transition: `transform ease-out 0.45s`}}>
                 {Data?.map((ele, idx) => 
-                    <div key={idx} className="slide__slide" style={{background: `${ele.background}`}}>
+                    <div key={idx} className="slide__slide" style={{background: `${ele.background}`, width: `${width}px`}}>
                         <div className="slide__text">
                             <h1>{ele.title}</h1>
                             <div>
