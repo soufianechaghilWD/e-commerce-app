@@ -54,3 +54,36 @@
 .explore_item{
     padding: 0.5rem 1rem;
 }
+.explore_item > h2{
+    font-size: 19px;
+    text-align: center;
+    font-family: "Righteous", Georgia, 'Times New Roman', Times, serif;
+}
+@media (max-width: 760px){
+    .explore__params{
+        display: none;
+    }
+    .explore__content__sm{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+        grid-gap: 1rem;
+        justify-content: space-evenly;
+        padding: 0 1rem;
+    }
+    .explore__content__sm > div > div{
+        background: rgba(218, 218, 218, 0.62);
+        min-height: 150px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .explore__content__sm > div > div > img{
+        object-fit: cover;
+        width: 75%;
+    }
+    .explore__content__sm > div > h2{
+        font-size: 16px;
+        font-family: "Righteous", Georgia, 'Times New Roman', Times, serif;
+        text-align: center;
+    }
+}
